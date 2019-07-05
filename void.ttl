@@ -1,0 +1,67 @@
+@prefix    void: <http://rdfs.org/ns/void#> .
+@prefix     lib: <http://www.swi-prolog.org/rdf/library/> .
+@prefix     owl: <http://www.w3.org/2002/07/owl#> .
+@prefix     rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix    rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix    foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix        : <http://purl.obolibrary.org/obo/> .
+
+<obo_prefixes> a void:Dataset ; void:dataDump <prefixes.ttl> .
+
+<ro> a void:Dataset ; lib:source <http://x.org> ; void:dataDump <../obo-relations/ro.owl> .
+<ro_core> a void:Dataset ; void:dataDump <../obo-relations/core.owl> .
+<bfoc> a void:Dataset ; void:dataDump <../obo-relations/bfo-classes-minimal.owl> .
+
+<uberon> a void:Dataset ; void:dataDump <../uberon/uberon.owl> .
+<uberon_zfa> a void:Dataset ; void:dataDump <../uberon/bridge/uberon-bridge-to-zfa.owl> .
+<uberon_edit> a void:Dataset ; void:dataDump <../uberon/uberon_edit.owl> .
+<uberon_ext> a void:Dataset ; void:dataDump <../uberon/ext.owl> .
+<allen_mba> a void:Dataset ; void:dataDump <../uberon/source-ontologies/allen-mba.owl> .
+<allen_hba> a void:Dataset ; void:dataDump <../uberon/source-ontologies/allen-hba.owl> .
+
+<zfa> a void:Dataset ; void:dataDump <../zebrafish-anatomical-ontology/zfa.owl> .
+
+<go> a void:Dataset ; void:dataDump <../go-ontology/target/go.owl> .
+<go_edit> a void:Dataset ; void:dataDump <../go-ontology/src/ontology/go-edit.owl> .
+
+<cl> a void:Dataset ; void:dataDump <../cell-ontology/cl.owl> .
+<cl_edit> a void:Dataset ; void:dataDump <../cell-ontology/src/ontology/cl-edit.owl> .
+
+<gaz> a void:Dataset ; void:dataDump <../gaz/gaz_obo.owl> .
+<gaz_owl> a void:Dataset ; void:dataDump <../gaz/gaz.owl> .
+<envo> a void:Dataset ; void:dataDump <../envo/envo.owl> .
+<envo_edit> a void:Dataset ; void:dataDump <../envo/src/envo/envo-edit.owl.rdf> .
+
+<pato> a void:Dataset ; void:dataDump <../pato/pato.owl> .
+<obi> a void:Dataset ; void:dataDump <../obi/obi.owl> .
+<doid> a void:Dataset ; void:dataDump <../HumanDiseaseOntology/src/ontology/doid.owl> .
+<ogms> a void:Dataset ; void:dataDump <../ogms/src/ontology/ogms.owl> .
+
+
+<hp> a void:Dataset ; void:dataDump <../human-phenotype-ontology/hp.owl> .
+<mp> a void:Dataset ; void:dataDump <../mammalian-phenotype-ontology/mp.owl> .
+<mondo> a void:Dataset ; void:dataDump <../mondo/mondo.owl> .
+<ncit_disease> a void:Dataset ; void:dataDump <../mondo/src/ontology/mirror/ncit-disease.owl> .
+<omim> a void:Dataset ; void:dataDump <../mondo/src/ontology/mirror/omim.owl> .
+<ordo> a void:Dataset ; void:dataDump <../disease-normalizer/sources/orphanet/ordo_orphanet.owl> .
+<snomed> a void:Dataset ; void:dataDump <../snomed-in-owl/nu-snomed.ttl> .
+
+<so> a void:Dataset ; void:dataDump <../SO-Ontologies/so.owl> .
+
+<chebi> a void:Dataset ; void:dataDump <../ChEBI/chebi.owl> .
+
+<upa> a void:Dataset ; void:dataDump <../unipathway/upa.owl> .
+
+<blmod> a void:Dataset ; void:dataDump <../biolink-model/ontology/biolink.ttl> .
+
+<obo_core> a void:Dataset ; void:dataDump <../rctauber/Experimental-OBO-Core/manual-core.owl> .
+
+<biotop> a void:Dataset ; void:dataDump <../biotop/biotop-merged.owl> .
+
+<sio> a void:Dataset ; void:dataDump <../semanticscience/ontology/sio.owl> .
+
+<common_core> a void:Dataset ; void:dataDump <../CommonCoreOntologies/merged.owl> .
+
+<mesh> a void:Dataset ; void:dataDump <../mesh2owl/mesh-obo.owl> .
+
