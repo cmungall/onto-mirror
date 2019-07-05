@@ -1,8 +1,21 @@
 # onto-mirror
 
-Local caching of ontologies to use with sparqlprog family of tools
+Allows for keeping a registry of locally checked out ontology
+files. This is primarily useful if you want to work with versions of
+ontologies in GitHub rather than those from the standard relase PURLs.
 
-# instructions
+The file [void.ttl](void.ttl) contains triples that map an ontology
+symbolic name to its location.
+
+E.g.
+
+```
+<uberon> a void:Dataset ; void:dataDump <../uberon/uberon.owl> .
+<uberon_ext> a void:Dataset ; void:dataDump <../uberon/ext.owl> .
+<uberon_edit> a void:Dataset ; void:dataDump <../uberon/uberon_edit.owl> .
+```
+
+Note that local paths are used.
 
 This assumes that you have ontologies checked out from github at the
 same level as where you have this repo. E.g.
@@ -12,7 +25,14 @@ same level as where you have this repo. E.g.
     * go-ontology
     * human-phenotype-ontology/
 
-etc
+Any tool that respects the void standard could potentially use this. I
+personally use this in conjunction with the SWI rdf library and [rdf_attach_library/1](https://www.swi-prolog.org/pldoc/doc_for?object=rdf_attach_library/1)
+
+See below for instructions.
+
+## use with SPARQLprog family of tools
+
+See [sparqlprog](https://github.com/cmungall/sparqlprog)
 
 Add to your `~/.profile`:
 
