@@ -1,3 +1,18 @@
+# onto-mirror
+
+Local caching of ontologies to use with sparqlprog family of tools
+
+# instructions
+
+This assumes that you have ontologies checked out from github at the
+same level as where you have this repo. E.g.
+
+ * repos/
+    * onto-mirror/
+    * go-ontology
+    * human-phenotype-ontology/
+
+etc
 
 Add to your `~/.profile`:
 
